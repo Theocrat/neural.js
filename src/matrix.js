@@ -66,7 +66,7 @@ exports.Matrix = class {
         //          which this bound method is encapsulated --> type: Matrix object
         let result = py.range(this.nrows).map(_ => py.range(other.ncols).map(_ => 0))
         for(let row = 0; row < this.nrows; row++) {
-            for(let col = 0; col < this.ncols; col++) {
+            for(let col = 0; col < other.ncols; col++) {
                 let lmatrix_row = this.valueOf()[row]
                 let rmatrix_col = other.valueOf().map(_ => _[col])
                 let products = py.zip(lmatrix_row, rmatrix_col).map(values => values[0] * values[1])
