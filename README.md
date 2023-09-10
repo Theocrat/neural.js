@@ -1,2 +1,2 @@
 # neural.js
-A neural network framework in Javascript, written primarily for the intensely industry-centric purpose of establishing that I have significant amounts of excess free time 😝
+A neural network framework in Javascript, written primarily for personal learning. I was inspired to build this after seeing [Micrograd](https://github.com/karpathy/micrograd) by Dr. Andrej Karpathy.
